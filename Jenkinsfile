@@ -9,8 +9,11 @@ pipeline {
         cleanWs()
       }
     }
-    stage('AWS-Secrest') { 
+    stage('AWS-Secret') { 
       steps { 
+        withAWS(credentials: 'Jenkins-Terrafrom-POC-Role', region: 'us-east-1') { 
+          sh 'echo "it works"'
+        }
       }
     }
     stage('checkout') {
