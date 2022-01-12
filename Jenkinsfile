@@ -9,7 +9,7 @@ pipeline {
         cleanWs()
       }
     }
-    stage('AWS-Secrest) { 
+    stage('AWS-Secrest') { 
       steps { 
       }
     }
