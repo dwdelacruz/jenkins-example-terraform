@@ -10,7 +10,8 @@ pipeline {
       }
     }
     stage('AWS-Secrest) { 
-    
+      steps { 
+      }
     }
     stage('checkout') {
       steps {
