@@ -19,11 +19,6 @@ pipeline {
         sh './terraformw apply -auto-approve -no-color'
       }
     }
-    stage('echo') {
-      steps {
-        sh 'echo "it works'
-      }
-  }
   post {
     always {
       cleanWs()
