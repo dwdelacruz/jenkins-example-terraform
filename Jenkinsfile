@@ -9,6 +9,9 @@ pipeline {
         cleanWs()
       }
     }
+    stage('AWS-Secrest) { 
+    
+    }
     stage('checkout') {
       steps {
         checkout scm
